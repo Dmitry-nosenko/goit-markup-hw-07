@@ -1,0 +1,58 @@
+$logo-text-color: #000000;
+$title-text-color: #212121;
+$primary-text-color: #757575;
+$primary-white-color: #fff;
+$hover-focus-color: #2196f3;
+$hero-footer-color: #2f303a;
+$features-bcg-color: #e5e5e5;
+$team-bcg-color: #f5f4fa;
+$footer-contact-color: rgba(255, 255, 255, 60%);
+$svg-color: #afb1b8;
+
+body {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}

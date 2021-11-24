@@ -1,0 +1,135 @@
+.flexbox {
+  display: flex;
+}
+
+.footer {
+  background-color: $hero-footer-color;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $primary-white-color;
+  }
+  &__label {
+    color: $hover-focus-color;
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+.address {
+  color: $primary-white-color;
+  font-style: inherit;
+
+  &__link {
+    color: $footer-contact-color;
+    display: inline-block;
+    &:hover,
+    &:focus {
+      color: $hover-focus-color;
+    }
+  }
+
+  &__item:first-child {
+    margin-top: 20px;
+    margin-bottom: 9px;
+    margin-right: 70px;
+  }
+}
+
+.social-link {
+  padding-top: 10px;
+  margin-right: 93px;
+}
+.social {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+}
+
+.form {
+  padding-top: 10px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.form-section {
+  display: flex;
+
+  &input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+
+  &__email {
+    width: 358px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $primary-white-color;
+    background-color: $hero-footer-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+  }
+}
+
+.form-button {
+  width: 200px;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  background-color: $hover-focus-color;
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  &__send {
+    margin-left: 10px;
+  }
+}

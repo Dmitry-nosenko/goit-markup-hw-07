@@ -14,46 +14,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
     <!-- хедер -->
-    <header class="header">
-      <div class="container">
+    <header class="page-header">
+      <div class="container page-header__container">
         <nav>
           <ul class="sait-nav list">
-            <li class="item first-child">
-              <a href="../index.html" class="logo link color-link"
-                ><span class="logo-item">Web</span>Studio</a
+            <li class="sait-nav__item">
+              <a href="../index.html" class="logo link sait-nav__link"
+                ><span class="logo__label">Web</span>Studio</a
               >
             </li>
-            <li class="item">
-              <a href="../index.html" class="link color-link">Студия</a>
+            <li class="sait-nav__item">
+              <a href="../index.html" class="link sait-nav__link">Студия</a>
             </li>
-            <li class="item">
+            <li class="sait-nav__item">
               <a
                 href="../portfolio/portfolio.html"
-                class="link color-link current"
+                class="link sait-nav__link sait-nav__current"
                 >Портфолио</a
               >
             </li>
-            <li class="item">
-              <a href="/" class="link color-link">Контакты</a>
+            <li class="sait-nav__item">
+              <a href="/" class="link sait-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contact list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="svg-icon" width="16" height="12">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link link"
+              ><svg class="contact__svg svg-icon" width="16" height="12">
                 <use href="../img/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link"
-              ><svg class="svg-icon" width="10" height="16">
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link link"
+              ><svg class="contact__svg svg-icon" width="10" height="16">
                 <use href="../img/symbol-defs.svg#icon-vector"></use>
               </svg>
               +38 096 111 11 11</a
@@ -67,29 +67,29 @@
       <section class="project-section">
         <h1 class="visually-hidden">портфолио</h1>
         <div class="container project">
-          <ul class="list-button">
-            <li class="item-button">
-              <button type="button" class="button">Все</button>
+          <ul class="project__list list">
+            <li class="project__item">
+              <button type="button" class="project__button">Все</button>
             </li>
-            <li class="item-button">
-              <button type="button" class="button">Веб-сайты</button>
+            <li class="project__item">
+              <button type="button" class="project__button">Веб-сайты</button>
             </li>
-            <li class="item-button">
-              <button type="button" class="button">Приложения</button>
+            <li class="project__item">
+              <button type="button" class="project__button">Приложения</button>
             </li>
-            <li class="item-button">
-              <button type="button" class="button">Дизайн</button>
+            <li class="project__item">
+              <button type="button" class="project__button">Дизайн</button>
             </li>
-            <li class="item-button">
-              <button type="button" class="button">Маркетинг</button>
+            <li class="project__item">
+              <button type="button" class="project__button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list">
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+          <ul class="project-gallery list">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-1.jpg"
                     alt="страница сайта"
                     width="370"
@@ -103,17 +103,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Технокряк</h3>
-                  <p class="text">Веб-сайт</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">Технокряк</h3>
+                  <p class="project-gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-2.jpg"
                     alt="баскетболисты нба"
                     width="370"
@@ -127,17 +127,19 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                  <p class="text">Дизайн</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="project-gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-3.jpg"
                     alt="логотип ресторана"
                     width="370"
@@ -151,17 +153,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Ресторан Seafood</h3>
-                  <p class="text">Приложение</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">Ресторан Seafood</h3>
+                  <p class="project-gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-4.jpg"
                     alt="наушники"
                     width="370"
@@ -175,17 +177,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Проект Prime</h3>
-                  <p class="text">Маркетинг</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">Проект Prime</h3>
+                  <p class="project-gallery__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-5.jpg"
                     alt="две коробки"
                     width="370"
@@ -199,17 +201,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Проект Boxes</h3>
-                  <p class="text">Приложение</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">Проект Boxes</h3>
+                  <p class="project-gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-6.jpg"
                     alt="веб сайт"
                     width="370"
@@ -223,17 +225,19 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Inspiration has no Borders</h3>
-                  <p class="text">Веб-сайт</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="project-gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-7.jpg"
                     alt="открытая книга"
                     width="370"
@@ -247,17 +251,19 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Издание Limited Edition</h3>
-                  <p class="text">Дизайн</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">
+                    Издание Limited Edition
+                  </h3>
+                  <p class="project-gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__project-gallery__img"
                     src="../img/portfolio/img-8.jpg"
                     alt="бирка с текстом"
                     width="370"
@@ -271,17 +277,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Проект LAB</h3>
-                  <p class="text">Маркетинг</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">Проект LAB</h3>
+                  <p class="project-gallery__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link-gallery">
-                <div class="project-thumb">
+            <li class="project-gallery__item">
+              <a href="" class="project-gallery__link">
+                <div class="project-gallery__thumb">
                   <img
-                    class="img"
+                    class="project-gallery__img"
                     src="../img/portfolio/img-9.jpg"
                     alt="работа за лептопом"
                     width="370"
@@ -295,9 +301,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card">
-                  <h3 class="title">Growing Business</h3>
-                  <p class="text">Приложение</p>
+                <div class="project-gallery__card">
+                  <h3 class="project-gallery__title">Growing Business</h3>
+                  <p class="project-gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -309,52 +315,54 @@
     <footer class="footer">
       <div class="container flexbox">
         <div class="address">
-          <a href="../index.html" class="logo"
-            ><span class="logo-item">Web</span>Studio</a
+          <a href="../index.html" class="footer__logo"
+            ><span class="footer__label">Web</span>Studio</a
           >
-          <address class="text">
-            <ul class="list">
-              <li>
-                <a class="item item-adress">г. Киев, пр-т Леси Украинки, 26</a>
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a>г. Киев, пр-т Леси Украинки, 26</a>
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="link"
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="link">+38 099 111 11 11</a>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
         <div class="social-link">
-          <h3 class="title">присоединяйтесь</h3>
+          <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="list social">
-            <li class="item">
-              <a href="" class="link"
-                ><svg class="svg-icon" width="44" height="44">
+            <li class="social__item">
+              <a href="" class="social__link link"
+                ><svg class="social__icon" width="44" height="44">
                   <use href="../img/symbol-defs.svg#icon-instagram-card"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link"
-                ><svg class="svg-icon" width="44" height="44">
+            <li class="social__item">
+              <a href="" class="social__link link"
+                ><svg class="social__icon" width="44" height="44">
                   <use href="../img/symbol-defs.svg#icon-twiter-card"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link"
-                ><svg class="svg-icon" width="44" height="44">
+            <li class="social__item">
+              <a href="" class="social__link link"
+                ><svg class="social__icon" width="44" height="44">
                   <use href="../img/symbol-defs.svg#icon-facebook-card"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link"
-                ><svg class="svg-icon" width="44" height="44">
+            <li class="social__item">
+              <a href="" class="social__link link"
+                ><svg class="social__icon" width="44" height="44">
                   <use href="../img/symbol-defs.svg#icon-linkedin-card"></use>
                 </svg>
               </a>
@@ -362,12 +370,12 @@
           </ul>
         </div>
         <div class="form">
-          <h3 class="title">Подпишитесь на рассылку</h3>
+          <h3 class="footer__title">Подпишитесь на рассылку</h3>
           <form class="form-section">
             <label for="email"></label>
             <input
               type="email"
-              class="email"
+              class="form-section__email"
               name="mail"
               id="email"
               placeholder="E-mail"
@@ -375,8 +383,8 @@
             />
             <button type="submit" class="form-button">
               Подписаться
-              <svg class="svg-send" width="24" height="24">
-                <use href="./img/symbol-defs.svg#icon-send"></use>
+              <svg class="form-button__send" width="24" height="24">
+                <use href="../img/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
           </form>
