@@ -10,10 +10,12 @@ $footer-contact-color: rgba(255, 255, 255, 60%);
 $svg-color: #afb1b8;
 
 body {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
+  color: $title-text-color;
+  background-color: $primary-white-color;
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
 }
 .visually-hidden {
   position: absolute !important;
