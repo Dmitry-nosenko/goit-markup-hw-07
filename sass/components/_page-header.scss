@@ -62,13 +62,11 @@
 .contact {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-left: auto;
 
   &__item {
     padding-top: 32px;
     padding-bottom: 32px;
-    justify-content: baseline;
   }
 
   &__item:last-child {
@@ -87,5 +85,7 @@
   &__svg {
     margin-right: 10px;
     fill: currentColor;
+    position: relative;
+    top: 2px;
   }
 }

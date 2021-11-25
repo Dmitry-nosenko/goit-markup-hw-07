@@ -131,18 +131,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-left: auto;
 }
 
 .contact__item {
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
 }
 
 .contact__item:last-child {
@@ -160,6 +154,8 @@ ul {
 .contact__svg {
   margin-right: 10px;
   fill: currentColor;
+  position: relative;
+  top: 2px;
 }
 
 .logo {
@@ -270,6 +266,8 @@ ul {
 
 .features .features__svg {
   background-color: #f5f4fa;
+  padding-left: 100px;
+  padding-right: 100px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
